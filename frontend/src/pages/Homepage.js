@@ -1,16 +1,14 @@
-import Header from "./Header";
-import Footer from "./Footer";
-
-
 import React from 'react';
-import Searchform from "./Searchform";
-
+import Footer from './Footer';
+import SearchForm from './Searchform';
 const HomePage =()=>{
 
     return(
         <div id="app" className="generic">
         <div>
-            
+            <app-header>
+                
+            </app-header>
             <div className="content">
                 <us-page-home inline-template>
                     <section id="home_page">
@@ -20,38 +18,7 @@ const HomePage =()=>{
                                 service team in the US, we are committed to serving you.
                             </div>
                         </div>
-                        <section id="hero"
-                            style={{backgroundImage: 'url("assets/generic_landing.jpg")', minHeight: '500px'}}>
-                            <div className="hero-backdrop"></div>
-                            <div className="container position-relative">
-                                <div className="hero-heading mb-4">
-                                    <h1>SAVE BIG ON AIRPORT PARKING</h1>
-                                    <h2>We have the best deals for airport parking lots!</h2>
-                                </div>
-                                <div className="searchbox landing">
-                                    <div className="row tabs">
-                                        <div className="tab">
-                                            <div className="heading">Most Convenient</div>
-                                            <div className="button">
-                                                <div className="icon"><i className="fas fa-car"></i></div>
-                                                Airport Parking Only
-                                            </div>
-                                        </div>
-                                        <div className="tab">
-                                            <div className="heading">Best Value</div>
-                                            <div className="button">
-                                                <div className="icon"><i className="fas fa-bed"></i> + <i
-                                                        className="fas fa-car"></i></div>
-                                                Hotel &amp; Parking Package
-                                            </div>
-                                        </div> 
-                                    </div>
-                                 <div>
-                                    <Searchform/>
-                                 </div>
-                                </div>
-                            </div>
-                        </section>
+                        <SearchForm />
                         <section id="benefits">
                             <div className="container">
                                 <h5>What Can You Save with AirportParkingReservations.com?</h5>
@@ -94,7 +61,7 @@ const HomePage =()=>{
             </div>
 
 
-        
+            <Footer />
         </div>
     </div>
     )
